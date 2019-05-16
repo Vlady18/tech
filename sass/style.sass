@@ -288,12 +288,80 @@ header
           margin-bottom: -7px
           margin-left: 20px
 #productions
+  overflow: hidden
   background-color: #0077fd
   display: flex
   justify-content: center
   .productions_left
     width: 50%
+    .wrap_head_prod
+      display: flex
+      justify-content: flex-end
+      padding-right: 50px
+      padding-bottom: 50px
+      height: 333px
     .head_product
+      position: relative
+      width: 490px
+      height: 235px
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      &:before
+        content: ""
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        height: 3px
+        background: #fff
+        transition: 400ms 800ms cubic-bezier(.28,.37,.08,.99)
+      .b-main__line
+        background: #fff
+        position: absolute
+        transition: all .3s ease
+      .b-main__line.lt
+        width: 0
+        height: 3px
+        top: 0
+        left: -18px
+      .b-main__line.lr
+        width: 3px
+        height: 0px
+        top: -18px
+        right: 0px
+      .b-main__line.lb
+        width: 0
+        height: 3px
+        bottom: 0
+        right: -18px
+      .b-main__line.ll
+        width: 3px
+        height: 0
+        bottom: -18px
+        left: 0
+      .b-main__line.ll_sec
+        width: 3px
+        height: 0
+        top: -18px
+        left: 0
+      &:hover
+        .lt
+          left: 0
+          width: 100%
+        .lr
+          height: 100%
+          top: 0
+        .lb
+          right: 0
+          width: 100%
+        .ll
+          bottom: 0
+          height: 15%
+        .ll_sec
+          top: 0
+          height: 15%
+
       h3
         //margin: 0
         color: #ffffff
@@ -301,6 +369,9 @@ header
         font-size: 48px
         font-weight: 400
         line-height: 48px
+        margin: 0
+        margin-left: -70px
+        margin-top: -50px
       h5
         opacity: 0.11
         color: #d9dadf
@@ -308,23 +379,416 @@ header
         margin: 0
         font-size: 118px
         font-weight: 400
+        margin-left: -125px
+        margin-top: 20px
         //line-height: 177.42px
+    .fat_product-wrapper
+      background: #fff
     .fat_product
       background-color: #0049a5
+      display: flex
+      justify-content: flex-end
+      padding-right: 20px
+      padding-top: 15px
+      transition: all .3s ease
+      height: 333px
+      &:hover
+        transform: scale3d(0.95,0.95,1)
+      .fat_product-img
+        align-self: flex-end
+        text-align: right
+        margin-top: -20px
+      .container_fat
+        width: 95%
+        max-width: 650px
+
       h6
         color: #ffffff
+        margin: 0
         font-family: "GothaProBla"
         font-size: 22px
         font-weight: 400
         line-height: 24px
         text-transform: uppercase
+    .wrap_small
+      display: flex
+      justify-content: center
+      .small_product-wrapper
+        background: #fff
+        transition: all .3s ease
+        width: 50%
+      .small_product
+        transition: all .3s ease
+        width: 100%
+        height: 333px
+        background: #94c1e7
+        overflow: hidden
+        padding-top: 30px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding-right: 30px
+        &:hover
+          transform: scale3d(0.95,0.95,1)
+        .small_product-container
+          width: 95%
+          max-width: 400px
+          align-self: flex-end
+        .small_prod-img
+          text-align: right
+
+        h6
+          color: #373737
+          font-family: "GothaProBla"
+          font-size: 22px
+          margin: 0
+          font-weight: 400
+          text-transform: uppercase
+
+          margin-bottom: 45px
+      .small_product-bg
+        background: url(../img/transf.png) no-repeat 50% 100%, #abb6c8
+        h6
+          color: #ffffff
+          font-family: "GothaProBla"
+          font-size: 22px
+          font-weight: 400
+          margin: 0
+          text-transform: uppercase
+
   .productions_right
     width: 50%
+    display: flex
+    .right_prod_small-wrap
+      width: 50%
+      .small_product-right-wrapper
+        background: #fff
+        transition: all .3s ease
 
+      .small_product
+        transition: all .3s ease
+        width: 100%
+        height: 333px
+        padding-top: 25px
+        padding-left: 22px
+        padding-right: 15px
+        &:hover
+          transform: scale3d(0.95,0.95,1)
+        h6
+          color: #ffffff
+          font-family: "GothaProBla"
+          font-size: 22px
+          font-weight: 400
+          line-height: 24px
+          text-transform: uppercase
+          margin: 0
+      .small_r_prod-img
+        text-align: center
+      .small_product-first
+        background: #0049a5
+        .small_r_prod-img
+          text-align: right
+          img
+            margin-top: -25px
+      .small_product-second
+        background: #65a4d7
+        .small_r_prod-img
+          margin-top: 20px
+      .small_product-third
+        background: #fff
+        h6
+          color: #373737
+    .high_block-wrapper
+      background: #ffffff
+      transition: all .3s ease
+      width: 50%
+      height: 100%
+    .high_block
+      transition: all .3s ease
+      width: 100%
+      height: 100%
+      padding-left: 35px
+      padding-right: 35px
+      padding-top: 105px
+      background: url(../img/prod_right-bg.png) no-repeat center/cover
+      &:hover
+        transform: scale3d(0.95,0.95,1)
+      p
+        margin-bottom: 30px
+        color: #ffffff
+        font-family: "GothaProReg"
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+#also_product
+  overflow: hidden
+  .bottom_producntion
+    display: flex
+    justify-content: center
+    .small_product-right-wrapper
+      width: 25%
+      background: #fff
+      .small_product-right-wrapper
+        background: #ffffff
+        transition: all .3s ease
+      .small_product
+        width: 100%
+        height: 333px
+        transition: all .3s ease
+        padding-top: 25px
+        padding-left: 22px
+        &:hover
+          transform: scale3d(0.95,0.95,1)
+        h6
+          color: #ffffff
+          font-family: "GothaProBla"
+          font-size: 22px
+          margin: 0
+          font-weight: 400
+          line-height: 24px
+          text-transform: uppercase
+      .small_product-first
+        background: #0077fd
+        .small_r_prod-img
+          text-align: right
+          img
+            margin-top: -20px
+      .small_product-sec
+        background: #ccced9
+        h6
+          color: #373737
+        .small_r_prod-img
+          margin-top: 45px
+          text-align: center
+      .small_product-third
+        background: #0077fd
+        padding-right: 20px
+        .small_r_prod-img
+          margin-top: 20px
+          text-align: right
+      .small_product-fourth
+        background: url(../img/smes.png) no-repeat 50% 100%, #aab7c9
+        h6
+          color: #373737
+#area
+  .area_wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    .area_head
+      width: 50%
+      padding-bottom: 80px
+      border-right: 1px solid #959595
+      position: relative
+      &:after
+        position: absolute
+        content: ''
+        top: 0
+        right: -2.5px
+        display: block
+        width: 5px
+        height: 169px
+        background-color: #0049a5
+      h5
+        opacity: 0.11
+        color: #042044
+        font-family: "GothaProBla"
+        font-size: 118px
+        font-weight: 400
+        //line-height: 177.42px
+        margin: 0
+        margin-left: -45px
+      h3
+        color: #373737
+        font-family: "GothaProBla"
+        font-size: 48px
+        font-weight: 400
+        line-height: 47.9px
+        margin: 0
+        margin-top: -50px
+    .area_info
+      width: 50%
+      padding-left: 70px
+      p
+        color: #5b6770
+        font-family: "GothaProReg"
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+        max-width: 460px
+#technologies
+  background: #0077fd
+  display: flex
+  overflow: hidden
+  justify-content: center
+  .technologies_left
+    width: 50%
+    .technologies_left-top
+      display: flex
+      justify-content: flex-end
+      padding-right: 50px
+      padding-top: 40px
+      height: 333px
+      .head_product
+        position: relative
+        width: 490px
+        height: 235px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        &:before
+          content: ""
+          width: 100%
+          position: absolute
+          top: 0
+          left: 0
+          height: 3px
+          background: #fff
+          transition: 400ms 800ms cubic-bezier(.28,.37,.08,.99)
+        .b-main__line
+          background: #fff
+          position: absolute
+          transition: all .3s ease
+        .b-main__line.lt
+          width: 0
+          height: 3px
+          top: 0
+          left: -18px
+        .b-main__line.lr
+          width: 3px
+          height: 0px
+          top: -18px
+          right: 0px
+        .b-main__line.lb
+          width: 0
+          height: 3px
+          bottom: 0
+          right: -18px
+        .b-main__line.ll
+          width: 3px
+          height: 0
+          bottom: -18px
+          left: 0
+        .b-main__line.ll_sec
+          width: 3px
+          height: 0
+          top: -18px
+          left: 0
+        &:hover
+          .lt
+            left: 0
+            width: 100%
+          .lr
+            height: 100%
+            top: 0
+          .lb
+            right: 0
+            width: 100%
+          .ll
+            bottom: 0
+            height: 15%
+          .ll_sec
+            top: 0
+            height: 15%
+        h3
+          color: #ffffff
+          font-family: "GothaProBla"
+          font-size: 48px
+          font-weight: 400
+          line-height: 48px
+          margin: 0
+          margin-left: -45px
+          margin-top: -50px
+        h5
+          opacity: 0.11
+          color: #d9dadf
+          font-family: "GothaProBla"
+          margin: 0
+          font-size: 118px
+          font-weight: 400
+          margin-left: -125px
+          margin-top: 20px
+    .technologies_left-bottom
+      .techno_wrap
+        display: flex
+        justify-content: flex-end
+        .techo_list
+          border: 1px solid #ffffff
+          width: 50%
+          height: 333px
+          padding-top: 25px
+          padding-left: 25px
+          transition: all .3s ease
+          &:last-child
+            p
+              max-width: 225px
+          &:hover
+            background: #0049a5
+          &:last-child
+            border-right: 0
+          &:first-child
+            border-right: none
+          h6
+            color: #ffffff
+            font-family: "GothaProBol"
+            font-size: 20px
+            font-weight: 700
+            //line-height: 26px
+            min-height: 70px
+            margin: 0
+            margin-bottom: 15px
+            text-decoration: underline
+          p
+            color: #e5e5e5
+            font-family: "GothaProReg"
+            font-size: 14px
+            font-weight: 400
+            max-width: 200px
+            line-height: 21px
+  .technologies_right
+    width: 50%
+    .techno_wrap
+      display: flex
+      justify-content: flex-start
+      flex-wrap: wrap
 
-
-
-
+      .techo_list
+        height: 333px
+        border: 1px solid #ffffff
+        width: 50%
+        padding-top: 25px
+        transition: all .3s ease
+        padding-left: 25px
+        &:hover
+          background: #0049a5
+        &:first-child
+          border-right: none
+          border-bottom: none
+          border-top: 0
+        h6
+          color: #ffffff
+          font-family: "GothaProBol"
+          font-size: 20px
+          font-weight: 700
+          //line-height: 26px
+          margin: 0
+          min-height: 70px
+          margin-bottom: 15px
+          text-decoration: underline
+        p
+          color: #e5e5e5
+          margin: 0
+          font-family: "GothaProReg"
+          font-size: 14px
+          font-weight: 400
+          //max-width: 200px
+          width: 95%
+          line-height: 21px
+      .techo_list-sec
+        border-bottom: 0
+        border-top: 0
+      .techo_list-thi
+        border-right: 0
 
 
 
@@ -337,13 +801,105 @@ header
 
 
 //MEDIA QUERIES_______________________________________________-
+@media all and (max-width: 1275px)
+  #technologies .technologies_right .techno_wrap .techo_list p
+    font-size: 12px
+    width: 97%
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list p
+    font-size: 12px
+@media all and (max-width: 1205px)
+  #productions .productions_left .head_product h3
+    margin-left: 0px
+  #technologies .technologies_left .technologies_left-top .head_product
+    width: 430px
+@media all and (max-width: 1195px)
+  #technologies .technologies_left .technologies_left-top
+    padding-right: 10px
+  #also_product .bottom_producntion .small_product-right-wrapper .small_product h6
+    font-size: 18px
+@media all and (max-width: 1085px)
+  #technologies .technologies_right .techno_wrap .techo_list p
+    font-size: 10px
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list p
+    font-size: 10px
+  #productions .productions_left .wrap_head_prod
+    padding-right: 8px
+@media all and (max-width: 1015px)
+  #productions
+    flex-direction: column
+  #productions .productions_left
+    width: 100%
+  #productions .productions_right
+    width: 100%
+  #productions .productions_left .wrap_head_prod
+    justify-content: flex-start
+    margin-left: 20px
+    width: 90%
+    margin: 0 auto
+    padding-right: 0
+    padding-left: 0
+  #productions .productions_left .head_product
+    width: 100%
+  #productions .productions_left .head_product h5
+    margin-left: 0px
+  #productions .productions_left .fat_product .container_fat
+    max-width: 100%
+  #productions .productions_left .fat_product .fat_product-img
+    margin-top: 0px
+  #productions .productions_left .fat_product
+    height: auto
+  #productions .productions_right
+    flex-direction: column
+  #productions .productions_right .right_prod_small-wrap
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+  #productions .productions_right .right_prod_small-wrap .small_product-right-wrapper
+    width: 50%
+  #productions .productions_right .right_prod_small-wrap .small_product
+    //height: auto
+  #productions .productions_right .right_prod_small-wrap .small_product-right-wrapper.spec
+    width: 100%
+    overflow: hidden
+  #productions .productions_right .high_block-wrapper
+    width: 100%
+  #productions .productions_right .high_block
+    padding-top: 60px
+    padding-bottom: 40px
 @media all and (max-width: 995px)
+  #also_product .bottom_producntion .small_product-right-wrapper
+    width: 50%
+  #also_product .bottom_producntion
+    flex-wrap: wrap
+  #also_product .bottom_producntion .small_product-right-wrapper .small_product-fourth
+    background: url(../img/smes.png) no-repeat 0% 100%, #aab7c9
   header .wrap_head .head_left .head_left-main h1
     font-size: 37px
   header .wrap_head .head_left .head_left-top .tel a
     width: 160px
     font-size: 15px
 @media all and (max-width: 970px)
+  #technologies
+    flex-direction: column
+  #technologies .technologies_left
+    width: 100%
+  #technologies .technologies_left .technologies_left-top
+    justify-content: flex-start
+  #technologies .technologies_left .technologies_left-top .head_product
+    width: 100%
+  #technologies .technologies_left .technologies_left-top .head_product h5
+    margin-left: 0
+  #technologies .technologies_left .technologies_left-top .head_product h3
+    margin-left: 0
+  #technologies .technologies_left .technologies_left-top
+    width: 90%
+    margin: 0 auto
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list p
+    font-size: 15px
+  #technologies .technologies_right
+    width: 100%
+  #technologies .technologies_right .techno_wrap .techo_list p
+    font-size: 15px
   #second .second_left
     width: 100%
   #second .second_right
@@ -360,6 +916,20 @@ header
     flex-direction: column
 
 @media all and (max-width: 780px)
+  #area
+    padding-bottom: 40px
+  #area .area_wrapper .area_head h3
+    font-size: 30px
+  #area .area_wrapper
+    flex-direction: column
+  #area .area_wrapper .area_head
+    width: 100%
+    border-right: 0
+  #area .area_wrapper .area_info
+    width: 100%
+    padding-left: 0
+  #area .area_wrapper .area_info p
+    max-width: 100%
   header .mouse_block
     display: none
   header .wrap_head
@@ -383,6 +953,7 @@ header
     border-right: 1px solid #ffffff
   header .wrap_head .head_left .head_left-top .tel
     display: none
+
   header .wrap_head .head_left .mob
     display: block
   .mob a.menu_button
@@ -395,7 +966,63 @@ header
     text-transform: uppercase
   .mob a.menu_button img
       margin-left: 15px
+@media all and (max-width: 710px)
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap
+    flex-wrap: wrap
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list
+    width: 100%
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list h6
+    min-height: inherit
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list p
+    max-width: 100%
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list
+    height: 100%
+    padding-bottom: 35px
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list:last-child p
+    max-width: 100%
+  #technologies .technologies_right .techno_wrap .techo_list
+    width: 100%
+  #technologies .technologies_right .techno_wrap .techo_list:first-child
+    border-bottom: 1px solid #fff
+  #technologies .technologies_right .techno_wrap .techo_list h6
+    min-height: inherit
+  #technologies .technologies_right .techno_wrap .techo_list
+    height: 100%
+    padding-bottom: 45px
+  #technologies .technologies_left .technologies_left-top .head_product h3
+    font-size: 29px
+  #technologies .technologies_left .technologies_left-top .head_product h5
+    font-size: 80px
+  #technologies .technologies_left .technologies_left-top
+    height: 100%
+    padding-bottom: 45px
+  #technologies .technologies_right .techno_wrap .techo_list-thi
+    border-bottom: 0
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list:first-child
+    border-bottom: 0
+  #technologies .technologies_right .techno_wrap .techo_list
+    border-right: 0
+    border-left: 0
+  #technologies .technologies_left .technologies_left-top .head_product
+    height: 165px
 @media all and (max-width: 520px)
+  #productions .productions_left .wrap_small
+    flex-wrap: wrap
+  #productions .productions_left .wrap_small .small_product-wrapper
+    width: 100%
+  #productions .productions_left .wrap_small .small_product .small_product-container
+    max-width: 100%
+  #productions .productions_right .right_prod_small-wrap .small_product-right-wrapper
+    width: 100%
+  #also_product .bottom_producntion .small_product-right-wrapper
+    width: 100%
+  #productions .productions_left .head_product h3
+    font-size: 30px
+    margin-top: -32px
+  #productions .productions_left .wrap_head_prod
+    padding-bottom: 30px
+  #productions .productions_left .head_product h5
+    font-size: 51px
   #second .second_left
     flex-direction: column
   #second
