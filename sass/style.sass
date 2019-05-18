@@ -1,17 +1,17 @@
 @font-face
-  font-family: 'GothaProMed'
+  font-family: 'GothaProMed' //500
   src: url("../fonts/GothaProMed.otf") format("opentype")
 
 @font-face
-  font-family: 'GothaProBla'
+  font-family: 'GothaProBla' //900
   src: url("../fonts/GothaProBla.otf") format("opentype")
 
 @font-face
-  font-family: 'GothaProBol'
+  font-family: 'GothaProBol' //700
   src: url("../fonts/GothaProBol.otf") format("opentype")
 
 @font-face
-  font-family: 'GothaProReg'
+  font-family: 'GothaProReg' //400
   src: url("../fonts/GothaProReg.otf") format("opentype")
 
 body, html
@@ -165,9 +165,7 @@ header
 
           img
             margin-bottom: 25px
-          .tell_txt
-
-
+          // .tell_txt
           h5
             margin: 0
             color: #ffffff
@@ -291,7 +289,7 @@ header
       width: 5px
       height: 170px
       background-color: #0049a5
-    &:before
+    // &:before
 
     p
       color: #ffffff
@@ -492,7 +490,6 @@ header
           font-weight: 400
           margin: 0
           text-transform: uppercase
-
   .productions_right
     width: 50%
     display: flex
@@ -501,7 +498,6 @@ header
       .small_product-right-wrapper
         background: #fff
         transition: all .3s ease
-
       .small_product
         transition: all .3s ease
         width: 100%
@@ -632,7 +628,7 @@ header
         width: 5px
         height: 169px
         background-color: #0049a5
-      &:after
+      // &:after
 
       h5
         opacity: 0.11
@@ -661,6 +657,265 @@ header
         font-weight: 400
         line-height: 24px
         max-width: 460px
+//--------------
+.slider__control_left::before
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+.slider__control_right::before 
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+.slider__control
+  position: absolute
+  top: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  transform: translateY(-50%)
+  z-index: 1000
+
+.slider__control_left
+  left: 60px
+
+.slider__control_right
+  left: 50%
+  img
+    transform: translate(calc(-100% - 50px))
+ 
+.spehes__wrapper-listItem.active
+  .textPart
+    background-color: rgba(5,16,31, 0.72)
+.spehes
+  background-color: #0049a5
+  position: relative
+  overflow: hidden
+  &__wrapper
+    display: flex
+    transition: transform .6s ease
+    &-listItem
+      flex: 0 0 75%
+      width: 75%
+      position: relative
+      display: flex
+      justify-content: flex-end
+      .textPart
+        background-color: #0049a5
+        padding-top: 130px
+        padding-bottom: 120px
+        padding-left: 140px
+        padding-right: 20px
+        // background-color: rgba(5,16,31, 0.72)
+        width: 668px
+        height: 712px
+        position: absolute
+        top: 0
+        left: 0
+        width: 66.6666%
+        z-index: 4
+        &__content
+          p
+            color: #ffffff
+            font-family: "GothaProBol"
+            font-size: 48px
+            margin-bottom: 60px
+          ul
+            padding: 0
+            max-width: 360px
+            li
+              list-style-type: none
+              color: #ffffff
+              font-family: "GothaProReg"
+              font-size: 14px
+              line-height: 21px
+              margin-bottom: 30px
+          a
+            color: #ffffff
+            margin-top: 90px
+            font-family: "GothaProReg"
+            font-size: 12px
+            line-height: 18px
+            display: block
+            width: 155px
+            height: 43px
+            border: 1px solid #0077fd
+            border-radius: 43px
+            padding-top: 12px
+            text-align: center
+            text-decoration: none
+      .imgPart
+        width: 668px
+        height: 712px
+        // display: flex
+        // justify-content: flex-end
+        // width: 66.6666%
+        img
+          width: 100%
+          height: 100%
+//companyNews------------------
+.companyNews
+  &__top
+    display: flex
+    align-items: center
+    &-left
+      width: 50%
+      padding-left: 60px
+      padding-right: 15px
+      padding-top: 45px
+      padding-bottom: 150px
+      border: 1px dotted #959595
+      h3
+        opacity: 0.11
+        color: #042044
+        font-family: "GothaProBla"
+        font-size: 118px
+        margin: 0
+        margin-left: -70px
+      h4
+        color: #373737
+        font-family: "GothaProBla"
+        font-size: 48px
+        line-height: 47.9px
+        margin: 0
+        margin-top: -55px
+    &-right
+      width: 50%
+      a
+        text-decoration: none
+        display: flex
+        p
+          margin-left: 70px
+          color: #0077fd
+          font-family: "GothaProBol"
+          font-size: 14px
+          line-height: 18px
+        &:hover
+          img
+            margin-left: 30px
+        img
+          transition: .3s
+          margin-left: 15px
+          margin-top: -4px
+  &__bottom
+    &__wrapper
+      &-listItem
+        width: 700px
+        &-general
+          width: 50%
+          h5
+            color: #373737
+            font-family: "GothaProMed"
+            font-size: 20px
+            line-height: 26px
+            text-decoration: underline
+          p
+            color: #5b6770
+            font-family: "GothaProReg"
+            font-size: 14px
+            line-height: 23px
+            margin-bottom: 55px
+          .date
+            display: flex
+            i
+              color: #0077fd
+              font-size: 22px
+              margin-right: 20px
+            p
+              color: #0077fd
+              font-family: "GothaProBol"
+              font-size: 14px
+              line-height: 22px
+        &-left
+          img
+            width: 100%
+            height: 100%
+        &-right
+          padding: 0 20px
+          border: 1px dotted #959595
+.companyNews__bottom__wrapper-listItem__wrapper
+  display: flex
+.news
+  display: flex
+  &__arrow
+    cursor: pointer
+    width: 88px
+    height: 68px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #0049a5
+    position: absolute
+    left: 50%
+    top: -68px
+    img
+      transition: .3s
+  &__prev
+    transform: translateX(-200%)
+    img
+      margin-right: -15px
+    &:hover
+      img
+        margin-right: 15px
+  &__next   
+    transform: translateX(-100%)
+    img
+      margin-left: -15px
+    &:hover
+      img
+        margin-left: 15px
+//Geography---------------------
+.geography
+  background-image: url(../img/geography_bg.png)
+  background-position: center center 
+  display: flex
+  justify-content: flex-end
+  padding-top: 40px
+  padding-bottom: 150px
+  &__content
+    font-family: "GothaProReg"
+    width: 659px
+    padding-left: 55px
+    margin-right: 5%
+    h3
+      opacity: 0.11
+      color: #042044
+      font-size: 118px
+      line-height: 177.42px
+      font-family: "GothaProBla"
+      margin: 0
+      margin-left: -55px
+    h4
+      margin: 0
+      color: #373737
+      font-size: 48px
+      line-height: 48px
+      font-family: "GothaProBla"
+      margin-top: -70px
+      margin-bottom: 43px
+    p
+      color: #373737
+      width: 392px
+      font-family: "GothaProReg"
+      font-size: 14px
+      line-height: 21px
+      margin-bottom: 25px
+    &-feedback
+      margin-top: 50px
+      cursor: pointer
+      width: 155px
+      height: 43px
+      border-radius: 43px
+      border: 1px solid #ffffff
+      background-color: #0077fd
+      display: flex
+      justify-content: center
+      align-items: center
+      p
+        color: #ffffff
+        width: auto
+        font-family: "GothaProReg"
+        font-size: 12px
+        line-height: 18px
+        margin: 0
+        margin-right: 15px
+        margin-left: 5px
+        
 #technologies
   background: #0077fd
   display: flex
@@ -888,12 +1143,12 @@ header
       ::-moz-placeholder
         color: rgba(160, 165, 170, 0.49)
         font-family: 'GothaProReg'
-      :-moz-placeholder
-        color: rgba(160, 165, 170, 0.49)
-        font-family: 'GothaProReg'
-      :-ms-input-placeholder
-        color: rgba(160, 165, 170, 0.49)
-        font-family: 'GothaProReg'
+      // :-moz-placeholder
+      //   color: rgba(160, 165, 170, 0.49)
+      //   font-family: 'GothaProReg'
+      // :-ms-input-placeholder
+      //   color: rgba(160, 165, 170, 0.49)
+      //   font-family: 'GothaProReg'
       i
         position: absolute
         top: 12px
@@ -983,12 +1238,265 @@ header
               display: inline
 
 
+//Partners----------------------  
+section#ourPartners
+  .ourPartners__top
+    display: flex
+    &-left
+      width: 50%
+      padding-left: 50px
+      padding-top: 37px
+      &__link
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        margin-right: 10px
+        a 
+          color: #0077fd
+          font-family: "GothaProBol"
+          font-size: 14px
+          line-height: 18px
+          margin: 0
+          margin-right: 25px
+          text-decoration: none
+          display: flex
+          justify-content: center
+          align-content: center
+          &:hover
+            img
+              transform: translateX(50%)
+          img
+            transition: .3s
+            margin-left: 20px
+            margin-top: -3px
+            // width: 31px
+            // height: 25px
+            // max-width: 31px
+            // max-height: 25px
+      &__text
+        h3
+          margin: 0
+          opacity: 0.11
+          color: #042044
+          font-family: "GothaProBla"
+          font-size: 118px
+          margin-left: -45px
+        h4
+          margin: 0
+          color: #373737
+          font-family: "GothaProBla"
+          font-size: 48px
+          margin-top: -55px
+          margin-bottom: 25px
+        p
+          color: #5b6770
+          font-family: "GothaProReg"
+          font-size: 14px
+          line-height: 21px
+          max-width: 413px
+      &__arrows
+        display: flex
+        justify-content: flex-end
+        &-item
+          cursor: pointer
+          width: 88px
+          height: 68px
+          display: flex
+          justify-content: center
+          align-items: center
+          background-color: #0049a5
+          img
+            transition: .3s
+        &-left
+          position: absolute
+          left: 50%
+          top: -68px
+          transform: translateX(-200%)  
+          img
+            margin-right: -25px
+          &:hover
+            img
+              margin-right: 10px
+              transition: .3s
+        &-right
+          position: absolute
+          left: 50%
+          top: -68px
+          transform: translateX(-100%) 
+          img
+            margin-left: -25px
+          &:hover
+            img
+              margin-left: 10px
+              transition: .3s
+    &-right
+      width: 50%
+      display: flex
+      &__item
+        width: 50%
+        height: 357px
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 1px dotted #959595
+  .ourPartners__bottom
+    &__wrapper
+      position: relative
+      &__item
+        width: 25%
+        height: 357px
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 1px dotted #959595
 
 
+//Footer-------------------------
+
+footer
+  position: relative
+  .footer__top
+    background-color: #042044
+    padding-top: 30px
+    padding-bottom: 30px
+    &-container
+      width: 90%
+      max-width: 1230px
+      margin: 0 auto
+      display: flex
+      .footer__top__left
+        width: 50%
+        display: flex
+        align-items: center
+        justify-content: space-around
+        .infoTech
+          color: #ffffff
+          font-family: "GothaProReg"
+          font-size: 14px
+          line-height: 18px
+          img
+            width: 111px
+            height: 46px
+            max-width: 111px
+            max-height: 46px
+            margin-bottom: 20px
+          p
+            margin-bottom: 25px
+        .infoSoc
+          display: flex
+          &__item
+            margin-left: 5px
+            a
+              text-decoration: none
+              color: rgba(255, 255, 255, 0.49)
+              display: flex
+              justify-content: center
+              align-items: center
+              width: 38px
+              height: 38px
+              border: 3px solid rgba(255, 255, 255, 0.49)
+              border-radius: 38px
+              i
+                font-size: 20px
+      .footer__top__right
+        width: 50%
+        color: #ffffff
+        font-family: "GothaProReg"
+        display: flex
+        justify-content: space-between
+        ul
+          li
+            list-style-type: none
+            border-bottom: 1px solid #ffffff
+            a
+              text-decoration: none
+              font-size: 14px
+              line-height: 30px
+              color: #ffffff
+          .nonBorder
+            border: none
+        &-contacts
+          color: #ffffff
+          h4
+            font-family: "GothaProBla"
+            font-size: 22px
+            line-height: 30px
+          p
+            font-size: 18px
+            line-height: 30px
+            text-transform: uppercase
+          span
+            font-size: 14px
+            line-height: 30px
+          p.mail
+            font-size: 14px
+            line-height: 30px
+    // &__right
+  .footer__bottom
+    background-color: #0049a5
+    padding: 12px 50px
+    &__allRights
+      display: flex
+      align-self: center
+      p
+        color: #7aadec
+        font-family: "GothaProReg"
+        font-size: 11px
+        // Text style for ",  , © 200"
+        line-height: 30px
+        // Text style for "ООО , ТЭХ-"
+        line-height: 18px
+    &__links
+      display: flex
+      align-items: center
+      ul
+        margin: 0px
+        padding: 0px
+        li
+          list-style-type: none
+          display: inline
+          margin-right: 50px
+          a
+            text-decoration: none
+            color: #ffffff
+            font-family: "GothaProReg"
+            font-size: 12px
+            line-height: 30px
+        .las_link
+          margin-right: 0px
+    &__logo
+      display: flex
+      justify-content: center
+      align-content: center
+      p
+        color: #919191
+        font-family: "GothaProReg"
+        font-size: 11px
+        height: 10px
+        margin-top: auto
+        margin-bottom: auto
+        margin-right: 10px
+      img
+        width: 113px
+        height: 40px
+        max-width: 113px
+        max-height: 40px
+    &-container
+      width: 90%
+      max-width: 1230px
+      margin: 0 auto
+      display: flex
+      justify-content: space-between
 
 
-
-
+.verBlueLine
+  width: 5px
+  height: 169px
+  background-color: #0049a5
+  position: absolute
+  left: 50%
+  top: 0
+  transform: translatex(-50%)
 
 
 
@@ -996,6 +1504,72 @@ header
 
 
 //MEDIA QUERIES_______________________________________________-
+@media all and (max-width: 1410px)
+  .geography__content
+    margin-right: -1%
+@media all and (max-width: 1330px)
+  .companyNews__bottom__wrapper-listItem-general p
+    font-size: 12px
+    line-height: 20px
+  .companyNews__bottom__wrapper-listItem-general h5
+    font-size: 18px
+@media all and (max-width: 1250px)
+  footer .footer__bottom-container
+    flex-direction: column
+    align-items: center
+@media all and (max-width: 1200px)
+  .slider__control_left
+    left: 10px
+  .slider__control_right img
+    transform: translate(calc(-100% - 10px))
+  .spehes__wrapper-listItem .textPart
+    padding-left: 70px
+  .companyNews__top-left h3
+    font-size: 100px
+  .companyNews__top-left h4
+    font-size: 40px
+  .geography
+    background-image: url(../img/geography_bg_new.png)
+    &__content
+      width: 100%
+      padding-right: 55px
+@media all and (max-width: 1150px)
+  .companyNews__bottom__wrapper-listItem-general
+    height: 600px
+  section#ourPartners .ourPartners__bottom__wrapper__item
+    height: 300px
+  section#ourPartners .ourPartners__top-right__item
+    height: 300px
+  section#ourPartners .ourPartners__top-left__text h3
+    font-size: 76px
+  section#ourPartners .ourPartners__top-left__text p
+    margin-top: -13px
+@media all and (max-width: 1100px)
+  .verBlueLine
+    display: none
+  footer .footer__top-container
+    flex-direction: column
+    align-items: center
+  footer .footer__top-container .footer__top__left
+    width: 100%
+    justify-content: space-between
+    margin-bottom: 30px
+  footer .footer__top-container .footer__top__right
+    width: 100%
+    justify-content: space-between
+  footer .footer__top-container .footer__top__right ul
+    padding-left: 0px
+@media all and (max-width: 995px)
+  .companyNews__top-left h3
+    font-size: 75px
+  .companyNews__top-left h4
+    font-size: 35px
+    margin-top: -33px
+  .companyNews__top-left
+    padding-left: 15px
+  .companyNews__top-left h3
+    margin-left: -25px
+    line-height: inherit
 @media all and (max-width: 1275px)
   #technologies .technologies_right .techno_wrap .techo_list p
     font-size: 12px
@@ -1074,6 +1648,35 @@ header
     width: 160px
     font-size: 15px
 @media all and (max-width: 970px)
+  .spehes__wrapper-listItem
+    width: 100%
+    flex: 0 0 100%
+  .slider__control_right
+    left: 66.6666%
+  section#ourPartners .ourPartners__top-left__text h4
+    margin-top: -33px
+  section#ourPartners .ourPartners__top-right
+    width: 100%
+  section#ourPartners .ourPartners__top-left
+    width: 100%
+  section#ourPartners .ourPartners__top
+    flex-direction: column
+    align-items: center
+  section#ourPartners .ourPartners__top-left
+    margin-bottom: 30px
+  section#ourPartners .ourPartners__top-left__arrows-item
+    transform: none
+    left: 50%
+    top: inherit
+    bottom: 0
+  section#ourPartners .ourPartners__top-left__arrows-left
+    transform: translateX(-100%)
+  section#ourPartners .ourPartners__bottom__wrapper
+    padding-bottom: 68px
+  section#ourPartners .ourPartners__top-right__item
+    height: 250px
+  section#ourPartners .ourPartners__bottom__wrapper__item
+    height: 250px
   #technologies
     flex-direction: column
   #technologies .technologies_left
@@ -1109,6 +1712,15 @@ header
     margin-top: 40px
   #second .wrap_second
     flex-direction: column
+// .slick-current
+//   margin-right: 100px
+@media all and (max-width: 780px)
+  .companyNews__bottom__wrapper-listItem-general h5
+    margin-bottom: 5px
+  .companyNews__bottom__wrapper-listItem-general p
+    margin-bottom: 15px
+  .companyNews__bottom__wrapper-listItem-general
+    height: 400px
 @media all and (max-width: 950px)
   .menu_block nav.nav_menu .main_ul li ul.submenu
     display: none
@@ -1176,7 +1788,94 @@ header
     line-height: 30px
     text-transform: uppercase
   .mob a.menu_button img
-      margin-left: 15px
+    margin-left: 15px
+@media all and (max-width: 730px)
+  .spehes__wrapper-listItem .textPart
+    width: 100%
+    position: static
+    padding-right: 0px
+  .slider__control_right
+    left: 100%
+    width: 31px
+    height: 29px
+  .spehes__wrapper-listItem .imgPart
+    display: none
+  .companyNews__top-left h3
+    font-size: 56px
+  .companyNews__top
+    flex-direction: column
+  .companyNews__top-left
+    width: 100%
+    border: none
+    padding-bottom: 30px
+  .companyNews__top-right a p
+    margin-left: 15px
+  .news__arrow
+    top: inherit
+  .news__prev
+    transform: translateX(-100%)
+    bottom: 0
+  .companyNews__bottom__wrapper
+    padding-bottom: 68px
+  .news__next
+    transform: none
+  .companyNews__top-right
+    width: 100%
+@media all and (max-width: 660px)
+  .geography__content h3
+    font-size: 90px
+    margin-left: -20px
+  .geography__content
+    padding-right: 15px
+    padding-left: 15px
+@media all and (max-width: 620px)
+  .companyNews__bottom__wrapper-listItem-left
+    width: 0
+    height: 0
+  .companyNews__bottom__wrapper-listItem-right
+    width: 100%
+    height: 100%
+@media all and (max-width: 600px)
+  footer .footer__bottom__links ul li
+    display: block
+    text-align: center
+    margin: 0
+@media all and (max-width: 520px)
+  .spehes__wrapper-listItem .textPart__content p
+    font-size: 40px
+  .spehes__wrapper-listItem .textPart__content ul li
+    font-size: 12px
+  .spehes__wrapper-listItem .textPart
+    padding-top: 50px
+    padding-bottom: 50px
+    height: auto
+    padding-left: 5px
+    padding-right: 5px
+  .spehes__wrapper-listItem
+    justify-content: center
+  .textPart__content
+    text-align: center
+  .spehes__wrapper-listItem .textPart__content ul
+    margin: 0 auto
+  .spehes__wrapper-listItem .textPart__content a
+    margin: 0 auto
+  .slider__control
+    top: 100%
+    transform: translateY(calc(-100% - 15px))
+  .spehes__wrapper-listItem .textPart__content p
+    font-size: 38px
+  .geography__content h3
+    font-size: 57px
+  .geography__content h4
+    font-size: 35px
+  .geography__content p
+    font-size: 13px
+    width: auto
+  section#ourPartners .ourPartners__top-left__text h4
+    font-size: 44px
+  footer .footer__top-container .footer__top__right
+    flex-direction: column
+    margin-left: 15px
 @media all and (max-width: 710px)
   #technologies .technologies_left .technologies_left-bottom .techno_wrap
     flex-wrap: wrap
