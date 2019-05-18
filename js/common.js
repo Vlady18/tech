@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    new WOW().init();
+
     var show = true;
     var countbox = ".wrap_second";
     $(window).on("scroll load resize", function () {
@@ -39,7 +41,6 @@ $(document).ready(function () {
             $('.menu_block').removeClass('dbbl');
         }
     });
-
     $('.slick_spec').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 // здесь навешиваете разные анимации для своих элементов, группируете их по времени выполнения и в свою очередь делаете скорость анимации в слике с учетом всех ваших временных выполнений
 //         $(currentSlide).addClass('bounce')
