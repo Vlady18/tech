@@ -69,7 +69,6 @@ $(document).ready(function () {
         $('html').css('overflow', 'auto')
     });
     $("nav ul li").on("click","a", function (event) {
-        console.log(this)
         if($(this).hasClass('parent_li')){
             $(this).siblings('ul').toggleClass('dbbl');
         }
