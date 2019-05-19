@@ -1381,6 +1381,223 @@ section#ourPartners
         align-items: center
         border: 1px dotted #959595
 
+#head_new
+  .new_head-line
+    display: flex
+    padding: 38px 0px 28px 0px
+    justify-content: space-between
+    align-items: center
+    .new_menu
+      ul
+        display: flex
+        list-style: none
+        li
+          margin-right: 40px
+          &:last-child
+            margin-right: 0
+          a
+            color: #373737
+            font-family: "GothaProReg"
+            font-size: 14px
+            font-weight: 400
+            line-height: 30px
+            text-decoration: underline
+    .menu_but
+      a
+        color: #373737
+        font-family: "GothaProReg"
+        font-size: 14px
+        font-weight: 400
+        text-decoration: none
+
+        line-height: 30px
+        text-transform: uppercase
+        img
+          margin-left: 15px
+  .bg_sm_page
+    height: 142px
+    background: url(../img/fon_catal.png) no-repeat center/cover
+  .breadcrumbs
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-wrap: wrap
+    list-style: none
+    margin-top: 25px
+    margin-bottom: 25px
+    li
+      margin-right: 18px
+      a
+        font-family: "GothaProReg"
+        font-size: 14px
+        font-weight: 400
+        line-height: 30px
+        color: #a0b2bf
+        text-decoration: none
+        i
+          margin-left: 18px
+      a.active
+        color: #0049a5
+#new_production
+  .offer_prod
+    display: flex
+    justify-content: center
+    .offer_prod_left
+      width: 50%
+      padding-top: 109px
+      padding-left: 60px
+      padding-bottom: 60px
+      background: url(../img/index.png)
+      border: 1px solid #959595
+      border-bottom: 0
+      border-right: none
+      p
+        color: #5b6770
+        font-family: "GothaProReg"
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+        max-width: 490px
+      p.hd2
+        color: #373737
+        font-family: "GothaProBla"
+        font-size: 48px
+        font-weight: 400
+        max-width: 100%
+
+        line-height: 47.9px
+        margin-bottom: 25px
+    .offer_prod_right
+      width: 50%
+      padding-top: 65px
+      border: 1px solid #959595
+      border-bottom: 0
+      padding-left: 60px
+      position: relative
+      .blue_line_offer-pr
+        position: absolute
+        content: ""
+        top: 0
+        left: -2.5px
+        display: block
+        width: 5px
+        height: 169px
+        background-color: #0049a5
+      p
+        color: #5b6770
+        font-family: "GothaProReg"
+        font-size: 14px
+        max-width: 540px
+        font-weight: 400
+        line-height: 24px
+        margin-bottom: 35px
+
+        &:last-child
+          margin-bottom: 0px
+
+  .wrapper_lit_prod
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    .lit_prod-wrapper
+      background: #fff
+      transition: all .3s ease
+      width: 25%
+    .lit_prod
+      transition: all .3s ease
+      width: 100%
+      height: 333px
+      background: #94c1e7
+      overflow: hidden
+      padding-top: 30px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding-right: 30px
+      &:hover
+        transform: scale3d(0.95,0.95,1)
+        p.hd6
+          transform: translate3d(0,20px,0)
+      .lit_prod_container
+        width: 95%
+        max-width: 400px
+        align-self: flex-end
+      .lit_prod-img
+        text-align: right
+
+      p.hd6
+        color: #fff
+        font-family: "GothaProBla"
+        font-size: 22px
+        transition: all .3s ease
+        margin: 0
+        font-weight: 400
+        text-transform: uppercase
+        margin-bottom: 45px
+    .lit_prod_1
+      background: #0049a5
+    .lit_prod_2
+      background: #65a4d7
+    .lit_prod_3
+      background: #0049a5
+      .lit_prod-img
+        margin-top: -70px
+    .lit_prod_4
+      background: #94c1e7
+      p.hd6
+        color: #373737
+    .lit_prod_6
+      background: #ffffff
+      p.hd6
+        color: #373737
+    .lit_prod_7
+      background: #0077fd
+      padding-right: 0
+      padding-left: 30px
+    .lit_prod_8
+      background: #ccced9
+      p.hd6
+        color: #373737
+    .lit_prod_9
+      background: #0077fd
+    .lit_prod_10
+      background: url(../img/new_pr10.png) no-repeat 0% 100%, #aab7c9
+      p.hd6
+        color: #373737
+    .lit_prod_11
+      background: #0049a5
+      display: flex
+      justify-content: center
+      align-items: center
+      a
+        color: #ffffff
+        font-family: "GothaProBol"
+        text-decoration: none
+        font-size: 14px
+        font-weight: 700
+        line-height: 18px
+        display: block
+        text-align: center
+        transition: all .3s ease
+        img
+          transition: all .3s ease
+          margin-bottom: -7px
+          margin-left: 20px
+        &:hover
+          img
+            margin-left: 30px
+
+    .lit_prod_bg
+      background: url(../img/new_pr5.png) no-repeat 50% 100%, #abb6c8
+      p.hd6
+        color: #ffffff
+        font-family: "GothaProBla"
+        font-size: 22px
+        font-weight: 400
+        margin: 0
+        text-transform: uppercase
 
 //Footer-------------------------
 
@@ -1784,6 +2001,7 @@ footer
     justify-content: space-between
   footer .footer__top-container .footer__top__right ul
     padding-left: 0px
+
 @media all and (max-width: 995px)
   .companyNews__top-left p.hd3
     font-size: 75px
@@ -1815,6 +2033,10 @@ footer
       width: 100%
 
 @media all and (max-width: 1275px)
+  #new_production .wrapper_lit_prod .lit_prod_7
+    padding-left: 10px
+  #new_production .wrapper_lit_prod .lit_prod_7 p.hd6
+    font-size: 20px
   #technologies .technologies_right .techno_wrap .techo_list p
     font-size: 12px
     width: 97%
@@ -1831,12 +2053,19 @@ footer
   #also_product .bottom_producntion .small_product-right-wrapper .small_product p.hd6
     font-size: 18px
 @media all and (max-width: 1085px)
+  #head_new .new_head-line .new_menu ul li
+    margin-right: 15px
   #technologies .technologies_right .techno_wrap .techo_list p
     font-size: 10px
   #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list p
     font-size: 10px
   #productions .productions_left .wrap_head_prod
     padding-right: 8px
+@media all and (max-width: 1040px)
+  #new_production .wrapper_lit_prod .lit_prod-wrapper
+    width: 50%
+  #new_production .wrapper_lit_prod .lit_prod_7
+    padding-left: 25px
 @media all and (max-width: 1015px)
   #productions
     flex-direction: column
@@ -1892,6 +2121,8 @@ footer
     width: 160px
     font-size: 15px
 @media all and (max-width: 970px)
+  #head_new .new_head-line .new_menu
+    display: none
   .spehes__wrapper-listItem
     width: 100%
     flex: 0 0 100%
@@ -1963,6 +2194,19 @@ footer
 // .slick-current
 //   margin-right: 100px
 @media all and (max-width: 780px)
+  #new_production .offer_prod
+    flex-direction: column
+  #new_production .offer_prod .offer_prod_left
+    width: 100%
+  #new_production .offer_prod .offer_prod_right
+    width: 100%
+  #new_production .offer_prod .offer_prod_right .blue_line_offer-pr
+    display: none
+  #new_production .offer_prod .offer_prod_right
+    padding-top: 40px
+    padding-bottom: 35px
+  #new_production .offer_prod .offer_prod_right
+    padding-top: 60px
   .companyNews__bottom__wrapper-listItem-general p.hd5
     margin-bottom: 5px
   .companyNews__bottom__wrapper-listItem-general p
@@ -2094,6 +2338,16 @@ footer
     text-align: center
     margin: 0
 @media all and (max-width: 570px)
+  #new_production .offer_prod .offer_prod_left
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 50px
+    border-left: 0
+  #new_production .offer_prod .offer_prod_right
+    padding-left: 20px
+    padding-right: 20px
+  #new_production .wrapper_lit_prod .lit_prod-wrapper
+    width: 100%
   .quest__wrapper-left p.zayavka
     font-size: 40px
   .quest__wrapper-left form .phonemail
