@@ -58,15 +58,20 @@ $(document).ready(function(){
             //   $('.spehes__wrapper').children().removeClass('active');
             //   $(activeElement).addClass('active');
             //   console.log(activeElement);
-            nextItem = position.getItemMin();
-            console.log(_items[nextItem+1]);
-            
-            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax()) {
-              nextItem = position.getItemMin();
+            // nextItem = position.getItemMin();
+            // console.log(_items[nextItem+1]);
 
-              var activeElement = $('.spehes__wrapper').children()[nextItem];
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax() || (_positionLeftItem + _wrapperWidth / _itemWidth - 1) <= position.getMax() ) {
+              nextItem = position.getItemMin();
+              console.log(_items[nextItem+1]);
+
+              let activeElement = $('.spehes__wrapper').children()[nextItem + 1];
               $('.spehes__wrapper').children().removeClass('active');
               $(activeElement).addClass('active');
+              if(activeElement === undefined){
+                let activeElementa = $('.spehes__wrapper').children()[0];
+                $(activeElementa).addClass('active');
+              }
 
               _items[nextItem].position = position.getMax() + 1;
               _items[nextItem].transform += _items.length * 100;
@@ -94,7 +99,7 @@ $(document).ready(function(){
 
         // обработчик события click для кнопок "назад" и "вперед"
         var _controlClick = function (e) {
-          var direction = this.classList.contains('slider__control_right') ? 'left' : 'left';
+          var direction = this.classList.contains('slider__control_right') ? 'right' : 'left';
           e.preventDefault();
           _transformItem(direction);
         };
@@ -111,7 +116,7 @@ $(document).ready(function(){
 
         return {
           right: function () { // метод right
-            _transformItem('left');
+            _transformItem('right');
           },
           left: function () { // метод left
             _transformItem('left');
