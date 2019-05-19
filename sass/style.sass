@@ -1961,7 +1961,7 @@ footer
     width: 75% 
     display: flex
     align-items: center
-    border: 1px dotted #959595
+    border: 1px solid #959595
     padding-right: 15px
     img
       width: 331px
@@ -1973,6 +1973,8 @@ footer
       font-size: 48px
       line-height: 47.9px
       max-width: 470px
+  .bb_0
+    border-bottom: 0
   &__right
     width: 25%
     background-image: url(../img/index.png)
@@ -1982,11 +1984,28 @@ footer
   display: flex
   &__left
     width: 75%
-    border: 1px dotted #959595
+    border: 1px solid #959595
     padding-top: 90px
     padding-left: 60px
     padding-bottom: 100px
     padding-right: 60px
+
+    p.pros_txt
+      margin-bottom: 30px
+      color: #5b6770
+      font-family: "GothaProReg"
+      font-size: 14px
+      font-weight: 400
+      line-height: 21px
+    p.catal_bold
+      color: #373737
+      font-family: "GothaProMed"
+      font-size: 20px
+      font-weight: 500
+      line-height: 26px
+      margin-bottom: 60px
+    p.pros_txt_bold
+      font-family: "GothaProBol"
     ul
       // padding: 0
       li
@@ -2003,9 +2022,14 @@ footer
           text-decoration: underline
           margin-bottom: 30px
           padding-left: 15px
+  .bl_0
+    border-left: 0
+  .bb_0
+    border-bottom: 0
+
   &__right
     width: 25%
-    border: 1px dotted #959595
+    border: 1px solid #959595
     padding-top: 60px
     padding-left: 10px
     padding-right: 10px
@@ -2022,6 +2046,62 @@ footer
           font-size: 14px
           line-height: 21px
           text-decoration: underline
+#also_topsec
+  padding-left: 60px
+  .new_wrap_br
+    display: flex
+    justify-content: space-between
+    .new_wrap_br_left
+      .spis_br
+        ul
+          list-style: none
+          margin: 0
+          padding: 0
+          max-width: 630px
+          margin-top: -60px
+          li
+            //margin-bottom: 15px
+            color: #5b6770
+            font-family: "GothaProReg"
+            font-size: 14px
+            font-weight: 400
+            line-height: 30px
+      .new_blue-txt_bl
+        margin-top: 40px
+        margin-bottom: 60px
+        padding: 15px 0px
+        border-left: 5px solid #0049a5
+        padding-left: 30px
+        p
+          color: #0049a5
+          font-family: "GothaProBol"
+          font-size: 14px
+          max-width: 595px
+          font-weight: 700
+          line-height: 21px
+      .spis_two_br
+        p.hd4
+          color: #373737
+          font-family: "GothaProBol"
+          font-size: 18px
+          font-weight: 700
+          line-height: 21px
+        ul
+          margin: 0
+          padding: 0
+          list-style: none
+          margin-top: 25px
+          li
+            color: #373737
+            font-family: "GothaProMed"
+            font-size: 14px
+            font-weight: 500
+            line-height: 24px
+    .new_wrap_br_right
+      text-align: right
+      img
+        margin-bottom: 20px
+
 
 .getknow 
   display: flex 
@@ -2043,7 +2123,19 @@ footer
     background-color: #0049a5
   &__right
     background-color: #0077fd
-
+#table
+  text-align: center
+  padding-top: 65px
+  padding-bottom: 130px
+  p.hd2
+    color: #373737
+    text-align: center
+    font-family: "GothaProMed"
+    font-size: 20px
+    margin: 0
+    margin: 35px 0px
+    font-weight: 500
+    line-height: 26px
 
 //MEDIA QUERIES_______________________________________________-
 @media all and (max-width: 1410px)
@@ -2181,6 +2273,8 @@ footer
       display: none
     .verBlueLine2
       display: none
+  #also_topsec .new_wrap_br .new_wrap_br_left .spis_br ul
+    margin-top: 10px
   .catal4Text
     flex-direction: column
     &__left
@@ -2233,6 +2327,22 @@ footer
     padding-top: 60px
     padding-bottom: 40px
 @media all and (max-width: 995px)
+  #also_topsec .new_wrap_br
+    flex-direction: column
+  #also_topsec .new_wrap_br .new_wrap_br_right
+    order: 0
+    text-align: left
+  .new_wrap_br_left
+    order: 1
+  #also_topsec .new_wrap_br .new_wrap_br_left .new_blue-txt_bl p
+    max-width: 100%
+  #also_topsec .new_wrap_br .new_wrap_br_left .spis_br ul
+    max-width: 100%
+  #also_topsec
+    padding-left: 10px
+    padding-right: 10px
+  #table
+    padding-bottom: 65px
   #also_product .bottom_producntion .small_product-right-wrapper
     width: 50%
   #also_product .bottom_producntion
