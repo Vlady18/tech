@@ -58,6 +58,8 @@ $(document).ready(function(){
             //   $('.spehes__wrapper').children().removeClass('active');
             //   $(activeElement).addClass('active');
             //   console.log(activeElement);
+            nextItem = position.getItemMin();
+            console.log(_items[nextItem+1]);
             
             if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax()) {
               nextItem = position.getItemMin();
@@ -65,7 +67,6 @@ $(document).ready(function(){
               var activeElement = $('.spehes__wrapper').children()[nextItem];
               $('.spehes__wrapper').children().removeClass('active');
               $(activeElement).addClass('active');
-              console.log(_positionLeftItem + _wrapperWidth / _itemWidth - 1);
 
               _items[nextItem].position = position.getMax() + 1;
               _items[nextItem].transform += _items.length * 100;

@@ -4072,4 +4072,10 @@ footer .footer__bottom-container {
     height: 552px;
   }
 }
+@media all and (max-width: 1357px) and (min-width: 1343px) {
+  .companyNews__bottom__wrapper-listItem__wrapper {
+    height: 573px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
