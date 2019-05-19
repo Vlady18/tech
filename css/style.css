@@ -2016,9 +2016,294 @@ footer .footer__bottom-container {
           transform: translatex(-50%);
 }
 
+.geogOur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.geogOur__left {
+  width: 50%;
+  background-image: url(../img/geogbg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 299px;
+  align-items: center;
+}
+.geogOur__left-text {
+  max-width: 252px;
+  color: #373737;
+  font-family: "GothaProBla";
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.geogOur__left-text span {
+  color: #373737;
+  font-family: "GothaProReg";
+  font-size: 14px;
+  line-height: 21px;
+}
+.geogOur__left img {
+  width: 271px;
+  height: 174px;
+  max-width: 271px;
+  max-height: 174px;
+}
+.geogOur__right {
+  width: 50%;
+  height: 299px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px dotted #959595;
+}
+.geogOur__right-text {
+  max-width: 264px;
+}
+.geogOur__right-text p {
+  color: #5b6770;
+  font-family: "GothaProReg";
+  font-size: 14px;
+  line-height: 21px;
+}
+.geogOur__right-text a {
+  display: block;
+  width: 155px;
+  height: 43px;
+  border: 1px solid #ffffff;
+  background-color: #0077fd;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "GothaProReg";
+  font-size: 12px;
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 43px;
+  line-height: 18px;
+  margin-top: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.geogOur__right-text a img {
+  margin-left: 20px;
+  width: 14px;
+  height: 22px;
+  max-width: 14px;
+  max-height: 22px;
+}
+
+.quest {
+  background-image: url(../img/9kpFDn.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.quest__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.quest__wrapper-left {
+  width: 50%;
+  padding: 100px;
+  padding-left: 80px;
+}
+.quest__wrapper-left p {
+  color: #373737;
+  font-family: "GothaProBla";
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.quest__wrapper-left p.zayavka {
+  color: #373737;
+  font-family: "GothaProBla";
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+.quest__wrapper-left span {
+  display: block;
+  color: #373737;
+  font-family: "GothaProReg";
+  font-size: 12px;
+  line-height: 18px;
+  max-width: 451px;
+}
+.quest__wrapper-left span a {
+  color: #0077fd;
+  text-decoration: underline;
+}
+.quest__wrapper-left form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.quest__wrapper-left form .phonemail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.quest__wrapper-left form input {
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #959595;
+  padding: 10px;
+  padding-left: 0px;
+  color: black;
+  font-family: "GothaProReg";
+  font-size: 18px;
+  line-height: 21px;
+}
+.quest__wrapper-left form ::-webkit-input-placeholder {
+  color: #aab0b5;
+  font-family: "GothaProReg";
+  font-size: 18px;
+  line-height: 21px;
+}
+.quest__wrapper-left form :-ms-input-placeholder {
+  color: #aab0b5;
+  font-family: "GothaProReg";
+  font-size: 18px;
+  line-height: 21px;
+}
+.quest__wrapper-left form ::-ms-input-placeholder {
+  color: #aab0b5;
+  font-family: "GothaProReg";
+  font-size: 18px;
+  line-height: 21px;
+}
+.quest__wrapper-left form ::placeholder {
+  color: #aab0b5;
+  font-family: "GothaProReg";
+  font-size: 18px;
+  line-height: 21px;
+}
+.quest__wrapper-left form input#phoneNumber {
+  width: 45%;
+}
+.quest__wrapper-left form input#email {
+  width: 45%;
+}
+.quest__wrapper-left form input[type=button] {
+  margin-top: 35px;
+  width: 255px;
+  height: 44px;
+  border: 1px solid #0077fd;
+  background-color: #ffffff;
+  border-radius: 44px;
+  color: #0077fd;
+  font-family: "GothaProBol";
+  font-size: 14px;
+  line-height: 18px;
+}
+.quest__wrapper-right {
+  width: 50%;
+  padding-left: 58px;
+  padding-top: 130px;
+}
+.quest__wrapper-right p {
+  color: #373737;
+  font-family: "GothaProReg";
+  font-size: 21px;
+  line-height: 30px;
+  max-width: 400px;
+  margin-bottom: 70px;
+}
+.quest__wrapper-right a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 166px;
+  margin-bottom: 80px;
+}
+.quest__wrapper-right a img {
+  width: 47px;
+  height: 57px;
+  max-width: 47px;
+  max-height: 57px;
+}
+.quest__wrapper-right a span {
+  display: block;
+  max-width: 91px;
+  color: #0077fd;
+  font-family: "GothaProBol";
+  font-size: 17px;
+  line-height: 22.09px;
+  text-decoration: underline;
+}
+.quest__wrapper-right .choose_file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.quest__wrapper-right .choose_file p {
+  color: #373737;
+  font-family: "GothaProBol";
+  font-size: 18px;
+  max-width: 143px;
+  line-height: inherit;
+  margin-bottom: 0px;
+  margin-right: 33px;
+}
+.quest__wrapper-right .choose_file button {
+  width: 202px;
+  height: 45px;
+  border: 1px solid #373737;
+  color: #373737;
+  font-family: "GothaProReg";
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 45px;
+  background-color: #ffffff;
+}
+
 @media all and (max-width: 1410px) {
   .geography__content {
     margin-right: -1%;
+  }
+}
+@media all and (max-width: 1385px) {
+  .quest__wrapper-left p.zayavka {
+    font-size: 44px;
+  }
+
+  .quest__wrapper-left {
+    padding-right: 40px;
   }
 }
 @media all and (max-width: 1330px) {
@@ -2128,6 +2413,40 @@ footer .footer__bottom-container {
   }
 }
 @media all and (max-width: 995px) {
+  .quest {
+    background-image: none;
+  }
+
+  .quest__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quest__wrapper-left {
+    width: 100%;
+    padding-bottom: 0;
+    padding-left: 58px;
+  }
+  .quest__wrapper-right {
+    padding-top: 40px;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .geogOur {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .geogOur__left {
+    width: 100%;
+  }
+  .geogOur__right {
+    width: 100%;
+  }
+
   .companyNews__top-left h3 {
     font-size: 75px;
   }
@@ -2658,7 +2977,49 @@ footer .footer__bottom-container {
     margin: 0;
   }
 }
+@media all and (max-width: 570px) {
+  .quest__wrapper-left p.zayavka {
+    font-size: 40px;
+  }
+
+  .quest__wrapper-left form .phonemail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quest__wrapper-left form .phonemail input {
+    width: 100% !important;
+  }
+}
 @media all and (max-width: 520px) {
+  .geogOur__left {
+    padding-bottom: 20px;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .geogOur__left img {
+    margin-bottom: 20px;
+  }
+
+  .geogOur__right-text {
+    text-align: center;
+  }
+  .geogOur__right-text a {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .geogOur__right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .spehes__wrapper-listItem .textPart__content p {
     font-size: 40px;
   }
@@ -2866,6 +3227,27 @@ footer .footer__bottom-container {
 
   .second_left .second_left-first {
     margin-bottom: 20px;
+  }
+}
+@media all and (max-width: 460px) {
+  .quest__wrapper-left {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .quest__wrapper-right .choose_file {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quest__wrapper-right .choose_file p {
+    margin-bottom: 20px;
+  }
+
+  .quest__wrapper-right {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media all and (max-width: 410px) {
