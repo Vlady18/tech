@@ -67,7 +67,7 @@ header
           font-weight: 400
           line-height: 53px
           text-transform: uppercase
-        h4
+        p
           color: #ffffff
           font-family: "GothaProReg"
           font-size: 18px
@@ -166,16 +166,13 @@ header
           img
             margin-bottom: 25px
           // .tell_txt
-          h5
+          p
             margin: 0
             color: #ffffff
             font-family: "GothaProBla"
             font-size: 17px
             font-weight: 400
             text-transform: uppercase
-
-
-
             &:after
               content: ''
               display: block
@@ -390,7 +387,7 @@ header
           top: 0
           height: 15%
 
-      h3
+      p.hd3
         //margin: 0
         color: #ffffff
         font-family: "GothaProBla"
@@ -400,7 +397,7 @@ header
         margin: 0
         margin-left: -70px
         margin-top: -50px
-      h5
+      p.hd5
         opacity: 0.11
         color: #d9dadf
         font-family: "GothaProBla"
@@ -422,7 +419,7 @@ header
       height: 333px
       &:hover
         transform: scale3d(0.95,0.95,1)
-        h6
+        p.hd6
           transform: translate3d(0,20px,0)
       .fat_product-img
         align-self: flex-end
@@ -432,7 +429,7 @@ header
         width: 95%
         max-width: 650px
 
-      h6
+      p.hd6
         color: #ffffff
         margin: 0
         font-family: "GothaProBla"
@@ -462,7 +459,7 @@ header
         padding-right: 30px
         &:hover
           transform: scale3d(0.95,0.95,1)
-          h6
+          p.hd6
             transform: translate3d(0,20px,0)
         .small_product-container
           width: 95%
@@ -471,7 +468,7 @@ header
         .small_prod-img
           text-align: right
 
-        h6
+        p.hd6
           color: #373737
           font-family: "GothaProBla"
           font-size: 22px
@@ -483,7 +480,7 @@ header
           margin-bottom: 45px
       .small_product-bg
         background: url(../img/transf.png) no-repeat 50% 100%, #abb6c8
-        h6
+        p.hd6
           color: #ffffff
           font-family: "GothaProBla"
           font-size: 22px
@@ -507,9 +504,9 @@ header
         padding-right: 15px
         &:hover
           transform: scale3d(0.95,0.95,1)
-          h6
+          p.hd6
             transform: translate3d(0,20px,0)
-        h6
+        p.hd6
           color: #ffffff
           font-family: "GothaProBla"
           font-size: 22px
@@ -532,7 +529,7 @@ header
           margin-top: 20px
       .small_product-third
         background: #fff
-        h6
+        p.hd6
           color: #373737
     .high_block-wrapper
       background: #ffffff
@@ -575,9 +572,9 @@ header
         padding-left: 22px
         &:hover
           transform: scale3d(0.95,0.95,1)
-          h6
+          p.hd6
             transform: translate3d(0,20px,0)
-        h6
+        p.hd6
           color: #ffffff
           transition: all .3s ease
           font-family: "GothaProBla"
@@ -594,7 +591,7 @@ header
             margin-top: -20px
       .small_product-sec
         background: #ccced9
-        h6
+        p.hd6
           color: #373737
         .small_r_prod-img
           margin-top: 45px
@@ -607,7 +604,7 @@ header
           text-align: right
       .small_product-fourth
         background: url(../img/smes.png) no-repeat 50% 100%, #aab7c9
-        h6
+        p.hd6
           color: #373737
 #area
   .area_wrapper
@@ -630,7 +627,7 @@ header
         background-color: #0049a5
       // &:after
 
-      h5
+      p.hd5
         opacity: 0.11
         color: #042044
         font-family: "GothaProBla"
@@ -639,7 +636,7 @@ header
         //line-height: 177.42px
         margin: 0
         margin-left: -45px
-      h3
+      p.hd3
         color: #373737
         font-family: "GothaProBla"
         font-size: 48px
@@ -760,20 +757,30 @@ header
       padding-top: 45px
       padding-bottom: 150px
       border: 1px dotted #959595
-      h3
+      position: relative
+      p.hd3
         opacity: 0.11
         color: #042044
         font-family: "GothaProBla"
         font-size: 118px
         margin: 0
         margin-left: -70px
-      h4
+      p.hd4
         color: #373737
         font-family: "GothaProBla"
         font-size: 48px
         line-height: 47.9px
         margin: 0
         margin-top: -55px
+      .company_line_blue
+        position: absolute
+        content: ""
+        top: 0
+        right: -2.5px
+        display: block
+        width: 5px
+        height: 169px
+        background-color: #0049a5
     &-right
       width: 50%
       a
@@ -798,12 +805,13 @@ header
         width: 700px
         &-general
           width: 50%
-          h5
+          p.hd5
             color: #373737
             font-family: "GothaProMed"
             font-size: 20px
             line-height: 26px
             text-decoration: underline
+            margin-top: 30px
           p
             color: #5b6770
             font-family: "GothaProReg"
@@ -847,16 +855,20 @@ header
       transition: .3s
   &__prev
     transform: translateX(-200%)
+    transition: all .3s ease
     img
       margin-right: -15px
     &:hover
+      background: #052650
       img
         margin-right: 15px
   &__next   
     transform: translateX(-100%)
+    transition: all .3s ease
     img
       margin-left: -15px
     &:hover
+      background: #052650
       img
         margin-left: 15px
 //Geography---------------------
@@ -872,7 +884,7 @@ header
     width: 659px
     padding-left: 55px
     margin-right: 5%
-    h3
+    p.hd3
       opacity: 0.11
       color: #042044
       font-size: 118px
@@ -880,7 +892,7 @@ header
       font-family: "GothaProBla"
       margin: 0
       margin-left: -55px
-    h4
+    p.hd4
       margin: 0
       color: #373737
       font-size: 48px
@@ -990,7 +1002,7 @@ header
           .ll_sec
             top: 0
             height: 15%
-        h3
+        p.hd3
           color: #ffffff
           font-family: "GothaProBla"
           font-size: 48px
@@ -999,7 +1011,7 @@ header
           margin: 0
           margin-left: -45px
           margin-top: -50px
-        h5
+        p.hd5
           opacity: 0.11
           color: #d9dadf
           font-family: "GothaProBla"
@@ -1028,7 +1040,7 @@ header
             border-right: 0
           &:first-child
             border-right: none
-          h6
+          p.hd6
             color: #ffffff
             font-family: "GothaProBol"
             font-size: 20px
@@ -1065,7 +1077,7 @@ header
           border-right: none
           border-bottom: none
           border-top: 0
-        h6
+        p.hd6
           color: #ffffff
           font-family: "GothaProBol"
           font-size: 20px
@@ -1274,20 +1286,24 @@ section#ourPartners
             // max-width: 31px
             // max-height: 25px
       &__text
-        h3
+        p.hd3
           margin: 0
           opacity: 0.11
           color: #042044
           font-family: "GothaProBla"
           font-size: 118px
           margin-left: -45px
-        h4
+          line-height: inherit
+          max-width: 100%
+        p.hd4
           margin: 0
           color: #373737
           font-family: "GothaProBla"
           font-size: 48px
           margin-top: -55px
           margin-bottom: 25px
+          line-height: inherit
+          max-width: 100%
         p
           color: #5b6770
           font-family: "GothaProReg"
@@ -1311,18 +1327,25 @@ section#ourPartners
           position: absolute
           left: 50%
           top: -68px
-          transform: translateX(-200%)  
+          transform: translateX(-200%)
+          transition: all .3s ease
+
           img
             margin-right: -25px
           &:hover
             img
               margin-right: 10px
               transition: .3s
+          &:hover
+            background: #052650
         &-right
           position: absolute
           left: 50%
           top: -68px
-          transform: translateX(-100%) 
+          transition: all .3s ease
+          transform: translateX(-100%)
+          &:hover
+            background: #052650
           img
             margin-left: -25px
           &:hover
@@ -1332,6 +1355,14 @@ section#ourPartners
     &-right
       width: 50%
       display: flex
+      position: relative
+      .blue_part-line
+        content: ''
+        position: absolute
+        left: -2px
+        width: 5px
+        height: 170px
+        background-color: #0049a5
       &__item
         width: 50%
         height: 357px
@@ -1417,7 +1448,7 @@ footer
             border: none
         &-contacts
           color: #ffffff
-          h4
+          p.hd4
             font-family: "GothaProBla"
             font-size: 22px
             line-height: 30px
@@ -1511,7 +1542,7 @@ footer
   .companyNews__bottom__wrapper-listItem-general p
     font-size: 12px
     line-height: 20px
-  .companyNews__bottom__wrapper-listItem-general h5
+  .companyNews__bottom__wrapper-listItem-general p.hd5
     font-size: 18px
 @media all and (max-width: 1250px)
   footer .footer__bottom-container
@@ -1524,9 +1555,9 @@ footer
     transform: translate(calc(-100% - 10px))
   .spehes__wrapper-listItem .textPart
     padding-left: 70px
-  .companyNews__top-left h3
+  .companyNews__top-left p.hd3
     font-size: 100px
-  .companyNews__top-left h4
+  .companyNews__top-left p.hd4
     font-size: 40px
   .geography
     background-image: url(../img/geography_bg_new.png)
@@ -1540,7 +1571,7 @@ footer
     height: 300px
   section#ourPartners .ourPartners__top-right__item
     height: 300px
-  section#ourPartners .ourPartners__top-left__text h3
+  section#ourPartners .ourPartners__top-left__text p.hd3
     font-size: 76px
   section#ourPartners .ourPartners__top-left__text p
     margin-top: -13px
@@ -1560,14 +1591,14 @@ footer
   footer .footer__top-container .footer__top__right ul
     padding-left: 0px
 @media all and (max-width: 995px)
-  .companyNews__top-left h3
+  .companyNews__top-left p.hd3
     font-size: 75px
-  .companyNews__top-left h4
+  .companyNews__top-left p.hd4
     font-size: 35px
     margin-top: -33px
   .companyNews__top-left
     padding-left: 15px
-  .companyNews__top-left h3
+  .companyNews__top-left p.hd3
     margin-left: -25px
     line-height: inherit
 @media all and (max-width: 1275px)
@@ -1577,14 +1608,14 @@ footer
   #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list p
     font-size: 12px
 @media all and (max-width: 1205px)
-  #productions .productions_left .head_product h3
+  #productions .productions_left .head_product p.hd3
     margin-left: 0px
   #technologies .technologies_left .technologies_left-top .head_product
     width: 430px
 @media all and (max-width: 1195px)
   #technologies .technologies_left .technologies_left-top
     padding-right: 10px
-  #also_product .bottom_producntion .small_product-right-wrapper .small_product h6
+  #also_product .bottom_producntion .small_product-right-wrapper .small_product p.hd6
     font-size: 18px
 @media all and (max-width: 1085px)
   #technologies .technologies_right .techno_wrap .techo_list p
@@ -1609,7 +1640,7 @@ footer
     padding-left: 0
   #productions .productions_left .head_product
     width: 100%
-  #productions .productions_left .head_product h5
+  #productions .productions_left .head_product p.hd5
     margin-left: 0px
   #productions .productions_left .fat_product .container_fat
     max-width: 100%
@@ -1653,7 +1684,9 @@ footer
     flex: 0 0 100%
   .slider__control_right
     left: 66.6666%
-  section#ourPartners .ourPartners__top-left__text h4
+  section#ourPartners .ourPartners__top-right .blue_part-line
+    display: none
+  section#ourPartners .ourPartners__top-left__text p.hd4
     margin-top: -33px
   section#ourPartners .ourPartners__top-right
     width: 100%
@@ -1685,9 +1718,9 @@ footer
     justify-content: flex-start
   #technologies .technologies_left .technologies_left-top .head_product
     width: 100%
-  #technologies .technologies_left .technologies_left-top .head_product h5
+  #technologies .technologies_left .technologies_left-top .head_product p.hd5
     margin-left: 0
-  #technologies .technologies_left .technologies_left-top .head_product h3
+  #technologies .technologies_left .technologies_left-top .head_product p.hd3
     margin-left: 0
   #technologies .technologies_left .technologies_left-top
     width: 90%
@@ -1698,6 +1731,8 @@ footer
     width: 100%
   #technologies .technologies_right .techno_wrap .techo_list p
     font-size: 15px
+  #second .second_right .blue_line_abs
+    display: none
   #second .second_left
     width: 100%
   #second .second_right
@@ -1715,7 +1750,7 @@ footer
 // .slick-current
 //   margin-right: 100px
 @media all and (max-width: 780px)
-  .companyNews__bottom__wrapper-listItem-general h5
+  .companyNews__bottom__wrapper-listItem-general p.hd5
     margin-bottom: 5px
   .companyNews__bottom__wrapper-listItem-general p
     margin-bottom: 15px
@@ -1741,7 +1776,7 @@ footer
 @media all and (max-width: 780px)
   #area
     padding-bottom: 40px
-  #area .area_wrapper .area_head h3
+  #area .area_wrapper .area_head p.hd3
     font-size: 30px
   #area .area_wrapper
     flex-direction: column
@@ -1800,7 +1835,11 @@ footer
     height: 29px
   .spehes__wrapper-listItem .imgPart
     display: none
-  .companyNews__top-left h3
+  .companyNews__top-left .company_line_blue
+    display: none
+  .companyNews__bottom__wrapper-listItem__wrapper
+    margin-top: 20px
+  .companyNews__top-left p.hd3
     font-size: 56px
   .companyNews__top
     flex-direction: column
@@ -1815,6 +1854,7 @@ footer
   .news__prev
     transform: translateX(-100%)
     bottom: 0
+
   .companyNews__bottom__wrapper
     padding-bottom: 68px
   .news__next
@@ -1822,7 +1862,7 @@ footer
   .companyNews__top-right
     width: 100%
 @media all and (max-width: 660px)
-  .geography__content h3
+  .geography__content p.hd3
     font-size: 90px
     margin-left: -20px
   .geography__content
@@ -1864,14 +1904,14 @@ footer
     transform: translateY(calc(-100% - 15px))
   .spehes__wrapper-listItem .textPart__content p
     font-size: 38px
-  .geography__content h3
+  .geography__content p.hd3
     font-size: 57px
-  .geography__content h4
+  .geography__content p.hd4
     font-size: 35px
   .geography__content p
     font-size: 13px
     width: auto
-  section#ourPartners .ourPartners__top-left__text h4
+  section#ourPartners .ourPartners__top-left__text p.hd4
     font-size: 44px
   footer .footer__top-container .footer__top__right
     flex-direction: column
@@ -1881,7 +1921,7 @@ footer
     flex-wrap: wrap
   #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list
     width: 100%
-  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list h6
+  #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list p.hd6
     min-height: inherit
   #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list p
     max-width: 100%
@@ -1894,14 +1934,14 @@ footer
     width: 100%
   #technologies .technologies_right .techno_wrap .techo_list:first-child
     border-bottom: 1px solid #fff
-  #technologies .technologies_right .techno_wrap .techo_list h6
+  #technologies .technologies_right .techno_wrap .techo_list p.hd6
     min-height: inherit
   #technologies .technologies_right .techno_wrap .techo_list
     height: 100%
     padding-bottom: 45px
-  #technologies .technologies_left .technologies_left-top .head_product h3
+  #technologies .technologies_left .technologies_left-top .head_product p.hd3
     font-size: 29px
-  #technologies .technologies_left .technologies_left-top .head_product h5
+  #technologies .technologies_left .technologies_left-top .head_product p.hd5
     font-size: 80px
   #technologies .technologies_left .technologies_left-top
     height: 100%
@@ -1936,12 +1976,12 @@ footer
     width: 100%
   #also_product .bottom_producntion .small_product-right-wrapper
     width: 100%
-  #productions .productions_left .head_product h3
+  #productions .productions_left .head_product p.hd3
     font-size: 30px
     margin-top: -32px
   #productions .productions_left .wrap_head_prod
     padding-bottom: 30px
-  #productions .productions_left .head_product h5
+  #productions .productions_left .head_product p.hd5
     font-size: 51px
   #second .second_left
     flex-direction: column
@@ -1954,6 +1994,6 @@ footer
     font-size: 28px
   header .wrap_head .head_right .head_right-main .head_box
     padding-left: 12px
-  header .wrap_head .head_right .head_right-main .head_box h5
+  header .wrap_head .head_right .head_right-main .head_box p
     font-size: 14px
 
