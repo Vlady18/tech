@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ba387e3-e4be-415e-b521-5366feb27bd8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog2.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog3.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog4.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/style.sass" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6197053">
+    <splitter split-orientation="horizontal" split-proportion="0.58747697">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -30,19 +31,39 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/catalog.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="388" column="54" selection-start-line="388" selection-start-column="54" selection-end-line="388" selection-end-column="54" />
+                <state relative-caret-position="214">
+                  <caret line="142" column="14" lean-forward="true" selection-start-line="18" selection-end-line="142" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/slider.js">
+            <entry file="file://$PROJECT_DIR$/catalog4.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2664" />
+                <state relative-caret-position="221">
+                  <caret line="139" column="110" selection-start-line="139" selection-start-column="110" selection-end-line="139" selection-end-column="110" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/catalog3.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="207">
+                  <caret line="140" column="12" lean-forward="true" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="61" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/catalog2.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="269">
+                  <caret line="140" column="120" selection-start-line="140" selection-start-column="120" selection-end-line="140" selection-end-column="120" />
+                </state>
               </provider>
             </entry>
           </file>
@@ -50,11 +71,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/style.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="2343" column="21" selection-start-line="2343" selection-start-column="21" selection-end-line="2343" selection-end-column="21" />
+                <state relative-caret-position="150">
+                  <caret line="1958" column="20" selection-start-line="1958" selection-start-column="20" selection-end-line="1958" selection-end-column="20" />
                   <folding>
                     <element signature="e#15508#15698#2" expanded="true" />
                     <element signature="e#15751#15941#2" expanded="true" />
@@ -63,11 +84,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/common.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-792">
-                  <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+                <state relative-caret-position="168">
+                  <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -113,7 +134,9 @@
       <find>1275px</find>
       <find>наша про</find>
       <find>реаг</find>
+      <find>.filters</find>
       <find>новости</find>
+      <find>verBlueLine</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,8 +148,11 @@
         <option value="$PROJECT_DIR$/css/wheel.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/common.js" />
-        <option value="$PROJECT_DIR$/sass/style.sass" />
         <option value="$PROJECT_DIR$/catalog.html" />
+        <option value="$PROJECT_DIR$/sass/style.sass" />
+        <option value="$PROJECT_DIR$/catalog3.html" />
+        <option value="$PROJECT_DIR$/catalog4.html" />
+        <option value="$PROJECT_DIR$/catalog2.html" />
       </list>
     </option>
   </component>
@@ -199,12 +225,12 @@
       <workItem from="1557997621163" duration="32622000" />
       <workItem from="1558092262959" duration="566000" />
       <workItem from="1558094198793" duration="20570000" />
-      <workItem from="1558162764568" duration="31109000" />
+      <workItem from="1558162764568" duration="33602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108985000" />
+    <option name="totallyTimeSpent" value="111478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -222,7 +248,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.14710744" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29586777" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -245,21 +271,21 @@
         <state relative-caret-position="-2664" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="2343" column="21" selection-start-line="2343" selection-start-column="21" selection-end-line="2343" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="1958" column="20" selection-start-line="1958" selection-start-column="20" selection-end-line="1958" selection-end-column="20" />
           <folding>
             <element signature="e#15508#15698#2" expanded="true" />
             <element signature="e#15751#15941#2" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -272,8 +298,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="388" column="54" selection-start-line="388" selection-start-column="54" selection-end-line="388" selection-end-column="54" />
+        <state relative-caret-position="214">
+          <caret line="142" column="14" lean-forward="true" selection-start-line="18" selection-end-line="142" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="139" column="110" selection-start-line="139" selection-start-column="110" selection-end-line="139" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="140" column="12" lean-forward="true" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="140" column="120" selection-start-line="140" selection-start-column="120" selection-end-line="140" selection-end-column="120" />
         </state>
       </provider>
     </entry>
