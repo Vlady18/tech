@@ -2656,6 +2656,7 @@ footer .footer__bottom-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 .filters__left {
   width: 75%;
@@ -3919,5 +3920,4 @@ footer .footer__bottom-container {
     height: 552px;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
