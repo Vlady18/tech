@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ba387e3-e4be-415e-b521-5366feb27bd8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/catalog2.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog3.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog4.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/style.sass" afterDir="false" />
@@ -19,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.58747697">
+    <splitter split-orientation="horizontal" split-proportion="0.36003682">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -43,7 +41,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/catalog4.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
+                <state relative-caret-position="57">
                   <caret line="146" column="38" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
                 </state>
               </provider>
@@ -74,8 +72,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/style.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
-                  <caret line="2344" column="24" selection-start-line="2344" selection-start-column="24" selection-end-line="2344" selection-end-column="24" />
+                <state relative-caret-position="344">
+                  <caret line="2188" column="34" lean-forward="true" selection-start-line="2188" selection-start-column="34" selection-end-line="2188" selection-end-column="34" />
                   <folding>
                     <element signature="e#15508#15698#2" expanded="true" />
                     <element signature="e#15751#15941#2" expanded="true" />
@@ -87,7 +85,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/common.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
+                <state relative-caret-position="500">
                   <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
                 </state>
               </provider>
@@ -121,7 +119,6 @@
       <find>h4</find>
       <find>h5</find>
       <find>h6</find>
-      <find>companyNews</find>
       <find>ourPartners</find>
       <find>companyNews__top-left</find>
       <find>.companyNews</find>
@@ -138,6 +135,7 @@
       <find>bl_0</find>
       <find>catal4Text__right</find>
       <find>filters</find>
+      <find>companyNews</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,9 +149,9 @@
         <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/catalog.html" />
         <option value="$PROJECT_DIR$/catalog2.html" />
-        <option value="$PROJECT_DIR$/sass/style.sass" />
         <option value="$PROJECT_DIR$/catalog3.html" />
         <option value="$PROJECT_DIR$/catalog4.html" />
+        <option value="$PROJECT_DIR$/sass/style.sass" />
       </list>
     </option>
   </component>
@@ -226,12 +224,12 @@
       <workItem from="1557997621163" duration="32622000" />
       <workItem from="1558092262959" duration="566000" />
       <workItem from="1558094198793" duration="20570000" />
-      <workItem from="1558162764568" duration="39610000" />
+      <workItem from="1558162764568" duration="41228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117486000" />
+    <option name="totallyTimeSpent" value="119104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -249,8 +247,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49925596" visible="true" weight="0.059504133" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.059504133" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49925596" visible="true" weight="0.049586777" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.049586777" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -272,13 +270,6 @@
         <state relative-caret-position="-2664" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -290,17 +281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="388" column="39" selection-start-line="388" selection-start-column="28" selection-end-line="388" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/style.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="2344" column="24" selection-start-line="2344" selection-start-column="24" selection-end-line="2344" selection-end-column="24" />
-          <folding>
-            <element signature="e#15508#15698#2" expanded="true" />
-            <element signature="e#15751#15941#2" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -320,8 +300,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="57">
           <caret line="146" column="38" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="2188" column="34" lean-forward="true" selection-start-line="2188" selection-start-column="34" selection-end-line="2188" selection-end-column="34" />
+          <folding>
+            <element signature="e#15508#15698#2" expanded="true" />
+            <element signature="e#15751#15941#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1115,6 +1115,7 @@ header .mouse_block .arr i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 573px;
 }
 
 .news {
@@ -2948,6 +2949,10 @@ footer .footer__bottom-container {
   }
 }
 @media all and (max-width: 1150px) {
+  .companyNews__bottom__wrapper-listItem__wrapper {
+    min-height: inherit;
+  }
+
   .companyNews__bottom__wrapper-listItem-general {
     height: 600px;
   }
@@ -4072,7 +4077,7 @@ footer .footer__bottom-container {
     height: 552px;
   }
 }
-@media all and (max-width: 1357px) and (min-width: 1343px) {
+@media all and (min-width: 1330px) and (max-width: 1357px) {
   .companyNews__bottom__wrapper-listItem__wrapper {
     height: 573px;
   }
