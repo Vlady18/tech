@@ -1498,6 +1498,15 @@ footer
   top: 0
   transform: translatex(-50%)
 
+.verBlueLine2
+  width: 5px
+  height: 169px
+  background-color: #0049a5
+  position: absolute
+  left: 75%
+  top: 0
+  transform: translatex(-50%)
+
 
 .geogOur
   display: flex
@@ -1693,6 +1702,101 @@ footer
           line-height: 18px
           border-radius: 45px
           background-color: #ffffff
+
+
+
+//CATALOG4-------------------------------
+
+.filters
+  display: flex
+  &__left 
+    width: 75% 
+    display: flex
+    align-items: center
+    border: 1px dotted #959595
+    padding-right: 15px
+    img
+      width: 331px
+      height: 299px
+      margin-right: 50px
+    p
+      color: #373737
+      font-family: "GothaProBla"
+      font-size: 48px
+      line-height: 47.9px
+      max-width: 470px
+  &__right
+    width: 25%
+    background-image: url(../img/index.png)
+    backgroud-size: 100% 100%
+
+.catal4Text
+  display: flex
+  &__left
+    width: 75%
+    border: 1px dotted #959595
+    padding-top: 90px
+    padding-left: 60px
+    padding-bottom: 100px
+    padding-right: 60px
+    ul
+      // padding: 0
+      li
+        list-style-type: decimal
+        color: #0049a5
+        font-family: "GothaProMed"
+        font-size: 18px
+        a
+          display: block
+          max-width: 784px
+          color: #0049a5
+          font-family: "GothaProMed"
+          font-size: 18px
+          text-decoration: underline
+          margin-bottom: 30px
+          padding-left: 15px
+  &__right
+    width: 25%
+    border: 1px dotted #959595
+    padding-top: 60px
+    padding-left: 10px
+    padding-right: 10px
+    ul
+      
+      li
+        color: #0049a5
+        max-width: 236px
+        list-style-type: square
+        margin-bottom: 25px
+        a
+          color: #0049a5
+          font-family: "GothaProReg"
+          font-size: 14px
+          line-height: 21px
+          text-decoration: underline
+
+.getknow 
+  display: flex 
+  color: #ffffff
+  font-family: "GothaProBol"
+  font-size: 14px
+  line-height: 21px
+  text-decoration: underline
+  text-transform: uppercase
+  &__gen
+    padding: 40px
+    width: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      margin-right: 20px
+  &__left
+    background-color: #0049a5
+  &__right
+    background-color: #0077fd
+
+
 //MEDIA QUERIES_______________________________________________-
 @media all and (max-width: 1410px)
   .geography__content
@@ -1790,6 +1894,8 @@ footer
   #technologies .technologies_left .technologies_left-bottom .techno_wrap .techo_list p
     font-size: 12px
 @media all and (max-width: 1205px)
+  .filters__left p
+    font-size: 39px
   #productions .productions_left .head_product h3
     margin-left: 0px
   #technologies .technologies_left .technologies_left-top .head_product
@@ -1807,6 +1913,23 @@ footer
   #productions .productions_left .wrap_head_prod
     padding-right: 8px
 @media all and (max-width: 1015px)
+  .filters
+    &__left
+      width: 100%
+    &__right
+      display: none
+    .verBlueLine2
+      display: none
+  .catal4Text
+    flex-direction: column
+    &__left
+      width: 100%
+      padding-left: 30px
+      padding-right: 30px
+    &__right
+      width: 100%
+      padding-left: 30px
+      padding-right: 30px
   #productions
     flex-direction: column
   #productions .productions_left
@@ -2003,6 +2126,32 @@ footer
   .mob a.menu_button img
     margin-left: 15px
 @media all and (max-width: 730px)
+  .filters
+    &__left
+      flex-direction: column
+      padding-bottom: 20px
+      align-items: center
+      padding: 0px 10px
+      text-align: center
+      img
+        margin-right: 0px
+      p
+        margin-top: 20px
+        margin-left: 10px
+        font-size: 40px
+  .catal4Text
+    &__left
+      padding: 20px
+      ul
+        li
+          a
+            font-size: 14px
+    &__right
+      padding: 20px
+      ul
+        li
+          a
+            font-size: 13px
   .spehes__wrapper-listItem .textPart
     width: 100%
     position: static
@@ -2041,6 +2190,11 @@ footer
   .geography__content
     padding-right: 15px
     padding-left: 15px
+@media all and (max-width: 640px)
+  .getknow
+    flex-direction: column
+    &__gen
+      width: 100%
 @media all and (max-width: 620px)
   .companyNews__bottom__wrapper-listItem-left
     width: 0
@@ -2061,7 +2215,13 @@ footer
     input
       width: 100%!important
 @media all and (max-width: 520px)
+  .geogOur__right
+    height: auto
+    padding-top: 20px
+    padding-bottom: 20px
   .geogOur__left
+    height: auto
+    padding-top: 10px
     padding-bottom: 20px
     text-align: center
     flex-direction: column
@@ -2194,6 +2354,8 @@ footer
     padding-left: 40px
     padding-right: 40px
 @media all and (max-width: 410px)
+  .filters__left p
+    font-size: 30px
   header .wrap_head .head_left .head_left-main h1
     font-size: 28px
   header .wrap_head .head_right .head_right-main .head_box
@@ -2201,3 +2363,6 @@ footer
   header .wrap_head .head_right .head_right-main .head_box h5
     font-size: 14px
 
+@media all and (max-width: 1168px) and (min-width: 1150px)
+  .companyNews__bottom__wrapper-listItem__wrapper
+    height: 552px
