@@ -809,7 +809,7 @@ header .mouse_block .arr i {
   text-align: right;
 }
 #also_product .bottom_producntion .small_product-right-wrapper .small_product-fourth {
-  background: url(../img/smes.png) no-repeat 50% 100%, #aab7c9;
+  background: url(../img/smes.png) no-repeat 0% 100%, #aab7c9;
 }
 #also_product .bottom_producntion .small_product-right-wrapper .small_product-fourth p.hd6 {
   color: #373737;
@@ -989,7 +989,7 @@ header .mouse_block .arr i {
   text-decoration: none;
 }
 .spehes__wrapper-listItem .imgPart {
-  width: 668px;
+  width: 66%;
   height: 712px;
 }
 .spehes__wrapper-listItem .imgPart img {
@@ -1115,6 +1115,7 @@ header .mouse_block .arr i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 573px;
 }
 
 .news {
@@ -1480,7 +1481,13 @@ header .mouse_block .arr i {
 
 #spec_slider-adv {
   background: url(../img/spec_slider.png) no-repeat center/cover;
-  padding: 80px 0px;
+  padding: 50px 0px;
+}
+#spec_slider-adv .news__arrow.news__arrow_spec {
+  top: inherit;
+  bottom: 142px;
+  left: calc(50% - -3px);
+  z-index: 10;
 }
 #spec_slider-adv .adv_wrapper {
   display: -webkit-box;
@@ -1492,16 +1499,119 @@ header .mouse_block .arr i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  padding: 80px 0px;
+}
+#spec_slider-adv .adv_wrapper .white_line {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 574px;
+  width: 554px;
+}
+#spec_slider-adv .adv_wrapper .white_line:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #fff;
+  -webkit-transition: 400ms 800ms cubic-bezier(0.28, 0.37, 0.08, 0.99);
+  transition: 400ms 800ms cubic-bezier(0.28, 0.37, 0.08, 0.99);
+}
+#spec_slider-adv .adv_wrapper .white_line:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: #fff;
+  -webkit-transition: 400ms 800ms cubic-bezier(0.28, 0.37, 0.08, 0.99);
+  transition: 400ms 800ms cubic-bezier(0.28, 0.37, 0.08, 0.99);
+}
+#spec_slider-adv .adv_wrapper .white_line .b-main__line {
+  background: #fff;
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#spec_slider-adv .adv_wrapper .white_line .b-main__line.lt {
+  width: 0;
+  height: 3px;
+  top: 0;
+  left: -18px;
+}
+#spec_slider-adv .adv_wrapper .white_line .b-main__line.lr {
+  width: 3px;
+  height: 0px;
+  top: -18px;
+  right: 0px;
+}
+#spec_slider-adv .adv_wrapper .white_line .b-main__line.lb {
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  right: -18px;
+}
+#spec_slider-adv .adv_wrapper .white_line .b-main__line.ll {
+  width: 3px;
+  height: 0;
+  bottom: -18px;
+  left: 0;
+}
+#spec_slider-adv .adv_wrapper .white_line .b-main__line.ll_sec {
+  width: 3px;
+  height: 0;
+  top: -18px;
+  left: 0;
+}
+#spec_slider-adv .adv_wrapper .white_line:hover .lt {
+  left: 0;
+  width: 100%;
+}
+#spec_slider-adv .adv_wrapper .white_line:hover .lr {
+  height: 100%;
+  top: 0;
+}
+#spec_slider-adv .adv_wrapper .white_line:hover .lb {
+  right: 0;
+  width: 100%;
+}
+#spec_slider-adv .adv_wrapper .white_line:hover .ll {
+  bottom: 0;
+  height: 15%;
+}
+#spec_slider-adv .adv_wrapper .white_line:hover .ll_sec {
+  top: 0;
+  height: 15%;
 }
 #spec_slider-adv .adv_wrapper .adv-slide-one {
   z-index: 99;
-  margin-right: -50px;
+  margin-right: -270px;
   width: 475px;
   height: 355px;
   background-color: #0077fd;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+#spec_slider-adv .adv_wrapper .adv-slide-one p {
+  color: #ffffff;
+  font-family: "GothaProReg";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  max-width: 300px;
+}
+#spec_slider-adv .adv_wrapper .adv-slide-two {
+  z-index: 10;
+  pointer-events: none;
 }
 #spec_slider-adv .adv_wrapper .adv-slide-two img {
-  width: 740px;
+  height: 480px;
 }
 
 .dbbl {
@@ -2948,6 +3058,10 @@ footer .footer__bottom-container {
   }
 }
 @media all and (max-width: 1150px) {
+  .companyNews__bottom__wrapper-listItem__wrapper {
+    min-height: inherit;
+  }
+
   .companyNews__bottom__wrapper-listItem-general {
     height: 600px;
   }
@@ -3113,6 +3227,30 @@ footer .footer__bottom-container {
   }
 }
 @media all and (max-width: 1040px) {
+  #spec_slider-adv .adv_wrapper .adv-slide-one p {
+    font-size: 21px;
+  }
+
+  #spec_slider-adv .adv_wrapper .white_line {
+    display: none;
+  }
+
+  #spec_slider-adv .adv_wrapper .adv-slide-one {
+    background-color: rgba(0, 119, 253, 0.8);
+    position: absolute;
+    padding-left: 40px;
+    padding-top: 40px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    padding-bottom: 40px;
+  }
+
+  #spec_slider-adv .news__arrow.news__arrow_spec {
+    left: calc(50% + 88px);
+    bottom: 143px;
+  }
+
   #new_production .wrapper_lit_prod .lit_prod-wrapper {
     width: 50%;
   }
@@ -3712,6 +3850,10 @@ footer .footer__bottom-container {
   .companyNews__top-right {
     width: 100%;
   }
+
+  #spec_slider-adv .news__arrow.news__arrow_spec {
+    left: 50%;
+  }
 }
 @media all and (max-width: 660px) {
   .geography__content p.hd3 {
@@ -3754,6 +3896,26 @@ footer .footer__bottom-container {
   }
 }
 @media all and (max-width: 570px) {
+  #spec_slider-adv .adv_wrapper .adv-slide-two img {
+    display: none;
+  }
+
+  #spec_slider-adv .adv_wrapper .adv-slide-one {
+    margin-right: 0;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    position: static;
+  }
+
+  #spec_slider-adv .news__arrow.news__arrow_spec {
+    bottom: 80px;
+  }
+
+  #spec_slider-adv .adv_wrapper .adv-slide-one {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   #new_production .offer_prod .offer_prod_left {
     padding-left: 20px;
     padding-right: 20px;
@@ -4072,7 +4234,7 @@ footer .footer__bottom-container {
     height: 552px;
   }
 }
-@media all and (max-width: 1357px) and (min-width: 1329px) {
+@media all and (min-width: 1330px) and (max-width: 1357px) {
   .companyNews__bottom__wrapper-listItem__wrapper {
     height: 573px;
   }
