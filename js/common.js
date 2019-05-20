@@ -79,12 +79,24 @@ $(document).ready(function () {
     $('.slick_spec').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 // здесь навешиваете разные анимации для своих элементов, группируете их по времени выполнения и в свою очередь делаете скорость анимации в слике с учетом всех ваших временных выполнений
 //         $(currentSlide).addClass('bounce')
+//         $(slick.$slides)
 
+        var all_slides = $(slick.$slides)
+        Array.from(all_slides).forEach( el => {
+            $(el).find('.adv-slide-one').removeClass('animated fadeOutLeft')
+        })
+          var cur_slide = $(slick.$slides[currentSlide]).find('.adv-slide-one');
+          $(cur_slide).toggleClass('animated fadeOutLeft')
     });
 
     $('.slick_spec').slick({
         useTransform: true,
-        speed: 300  // скорость анимации будет зависить от времени анимирования всех ваших блоков
+        cssEase: 'ease-in-out',
+        arrows: true,
+        draggable: false,
+        prevArrow: '<div class="news__arrow news__arrow_spec news__prev"><img src="img/arrow_left.png" alt=""></div>',
+        nextArrow: '<div class="news__arrow news__arrow_spec news__next"><img src="img/arrow_right.png" alt=""></div>',
+        speed: 1500  // скорость анимации будет зависить от времени анимирования всех ваших блоков
 });
 
 });
