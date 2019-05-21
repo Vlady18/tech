@@ -910,7 +910,11 @@ header .mouse_block .arr i {
           transform: translate(calc(-100% - 50px));
 }
 
-.spehes__wrapper-listItem.active .textPart {
+#overlay {
+  position: absolute;
+  width: 50%;
+  z-index: 2;
+  height: 100%;
   background-color: rgba(5, 16, 31, 0.72);
 }
 
@@ -942,7 +946,6 @@ header .mouse_block .arr i {
           justify-content: flex-end;
 }
 .spehes__wrapper-listItem .textPart {
-  background-color: #0049a5;
   padding-top: 130px;
   padding-bottom: 120px;
   padding-left: 140px;
